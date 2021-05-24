@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "controlers",
+  "info": {
+    "name": "controlers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Menu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "controllers.menu"
+    },
+    "Settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "controllers.settings"
+    }
+  }
+}

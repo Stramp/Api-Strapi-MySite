@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_controllers_socialmedias",
+  "info": {
+    "name": "socialmedia",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "ico": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

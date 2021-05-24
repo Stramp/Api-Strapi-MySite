@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_controllers_items",
+  "info": {
+    "name": "item",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "ico": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "action": {
+      "type": "string"
+    }
+  }
+}

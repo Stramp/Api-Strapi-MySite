@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_controllers_colors",
+  "info": {
+    "name": "colors",
+    "icon": "eye-dropper"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string"
+    }
+  }
+}

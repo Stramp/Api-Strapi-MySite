@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/controlers",
+      "handler": "controlers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/controlers",
+      "handler": "controlers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/controlers",
+      "handler": "controlers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

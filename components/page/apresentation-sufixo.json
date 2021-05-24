@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_page_apresentation_sufixos",
+  "info": {
+    "name": "apresentationSufixo",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "presents": {
+      "type": "string"
+    }
+  }
+}

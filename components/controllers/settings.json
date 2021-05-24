@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_controllers_settings",
+  "info": {
+    "name": "Settings",
+    "icon": "tools"
+  },
+  "options": {},
+  "attributes": {
+    "ColorTitle": {
+      "type": "string"
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "controllers.colors"
+    },
+    "TitleLanguage": {
+      "type": "string"
+    },
+    "Languages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "controllers.languages"
+    },
+    "TitleDarkmode": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_controllers_menus",
+  "info": {
+    "name": "Menu",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "controllers.item"
+    },
+    "Btns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "controllers.item"
+    },
+    "TitleSocialMedia": {
+      "type": "string"
+    },
+    "socialmedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "controllers.socialmedia"
+    }
+  }
+}

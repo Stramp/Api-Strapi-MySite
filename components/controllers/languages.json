@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_controllers_languages",
+  "info": {
+    "name": "Languages",
+    "icon": "language"
+  },
+  "options": {},
+  "attributes": {
+    "Language": {
+      "type": "string"
+    }
+  }
+}

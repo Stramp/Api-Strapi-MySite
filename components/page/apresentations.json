@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_apresentations",
+  "info": {
+    "name": "apresentations",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "apresentationPrefix": {
+      "type": "string"
+    },
+    "apresentationSufixo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.apresentation-sufixo"
+    }
+  }
+}

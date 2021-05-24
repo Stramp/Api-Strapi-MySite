@@ -11,5 +11,44 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "bg": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "avatar": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Saudation": {
+      "type": "string"
+    },
+    "apresentations": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.apresentations"
+    },
+    "InitialDescription": {
+      "type": "text"
+    },
+    "Btns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "controllers.item"
+    }
+  }
 }
