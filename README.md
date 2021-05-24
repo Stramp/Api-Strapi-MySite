@@ -1,2 +1,2 @@
 # Api-Strapi-MySite
-Api with Strapi and mongo for my site docker
+Api with Strapi and PostG for my site docker
