@@ -2,12 +2,15 @@
   "collectionName": "components_controllers_colors",
   "info": {
     "name": "colors",
-    "icon": "eye-dropper"
+    "icon": "eye-dropper",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "color": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

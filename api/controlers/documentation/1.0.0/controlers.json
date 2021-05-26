@@ -312,7 +312,8 @@
     "schemas": {
       "Controlers": {
         "required": [
-          "id"
+          "id",
+          "Menu"
         ],
         "properties": {
           "id": {
@@ -321,7 +322,11 @@
           "Menu": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "item",
+              "Btns",
+              "TitleSocialMedia",
+              "socialmedia"
             ],
             "properties": {
               "id": {
@@ -332,14 +337,16 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "label"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "label": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 15
                     },
                     "ico": {
                       "required": [
@@ -412,21 +419,24 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "minItems": 3
               },
               "Btns": {
                 "type": "array",
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "label"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "label": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 15
                     },
                     "ico": {
                       "required": [
@@ -509,7 +519,8 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "link"
                   ],
                   "properties": {
                     "id": {
@@ -586,14 +597,20 @@
                       }
                     }
                   }
-                }
+                },
+                "minItems": 2
               }
             }
           },
           "Settings": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "ColorTitle",
+              "colors",
+              "TitleLanguage",
+              "Languages",
+              "TitleDarkmode"
             ],
             "properties": {
               "id": {
@@ -607,7 +624,8 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "color"
                   ],
                   "properties": {
                     "id": {
@@ -617,7 +635,9 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "minItems": 6,
+                "maxItems": 12
               },
               "TitleLanguage": {
                 "type": "string"
@@ -627,7 +647,8 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "Language"
                   ],
                   "properties": {
                     "id": {
@@ -637,7 +658,8 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "minItems": 1
               },
               "TitleDarkmode": {
                 "type": "string"
@@ -651,11 +673,18 @@
         }
       },
       "NewControlers": {
+        "required": [
+          "Menu"
+        ],
         "properties": {
           "Menu": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "item",
+              "Btns",
+              "TitleSocialMedia",
+              "socialmedia"
             ],
             "properties": {
               "id": {
@@ -666,14 +695,16 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "label"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "label": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 15
                     },
                     "ico": {
                       "required": [
@@ -746,21 +777,24 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "minItems": 3
               },
               "Btns": {
                 "type": "array",
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "label"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "label": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 15
                     },
                     "ico": {
                       "required": [
@@ -843,7 +877,8 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "link"
                   ],
                   "properties": {
                     "id": {
@@ -920,14 +955,20 @@
                       }
                     }
                   }
-                }
+                },
+                "minItems": 2
               }
             }
           },
           "Settings": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "ColorTitle",
+              "colors",
+              "TitleLanguage",
+              "Languages",
+              "TitleDarkmode"
             ],
             "properties": {
               "id": {
@@ -941,7 +982,8 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "color"
                   ],
                   "properties": {
                     "id": {
@@ -951,7 +993,9 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "minItems": 6,
+                "maxItems": 12
               },
               "TitleLanguage": {
                 "type": "string"
@@ -961,7 +1005,8 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "Language"
                   ],
                   "properties": {
                     "id": {
@@ -971,7 +1016,8 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "minItems": 1
               },
               "TitleDarkmode": {
                 "type": "string"

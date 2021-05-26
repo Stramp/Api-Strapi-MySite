@@ -2,12 +2,15 @@
   "collectionName": "components_controllers_languages",
   "info": {
     "name": "Languages",
-    "icon": "language"
+    "icon": "language",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Language": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

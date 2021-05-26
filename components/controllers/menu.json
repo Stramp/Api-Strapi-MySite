@@ -2,27 +2,35 @@
   "collectionName": "components_controllers_menus",
   "info": {
     "name": "Menu",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "item": {
       "type": "component",
       "repeatable": true,
-      "component": "controllers.item"
+      "component": "controllers.item",
+      "required": true,
+      "min": 3
     },
     "Btns": {
       "type": "component",
       "repeatable": true,
-      "component": "controllers.item"
+      "component": "controllers.item",
+      "required": true
     },
     "TitleSocialMedia": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "socialmedia": {
       "type": "component",
       "repeatable": true,
-      "component": "controllers.socialmedia"
+      "component": "controllers.socialmedia",
+      "required": true,
+      "min": 2
     }
   }
 }

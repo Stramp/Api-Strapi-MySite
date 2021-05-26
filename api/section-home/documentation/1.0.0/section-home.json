@@ -505,14 +505,16 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "label"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "label": {
-                  "type": "string"
+                  "type": "string",
+                  "maxLength": 15
                 },
                 "ico": {
                   "required": [
@@ -637,14 +639,16 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "label"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "label": {
-                  "type": "string"
+                  "type": "string",
+                  "maxLength": 15
                 },
                 "ico": {
                   "required": [

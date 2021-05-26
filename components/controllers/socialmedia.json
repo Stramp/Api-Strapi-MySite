@@ -2,12 +2,15 @@
   "collectionName": "components_controllers_socialmedias",
   "info": {
     "name": "socialmedia",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "link": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "ico": {
       "model": "file",

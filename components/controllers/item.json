@@ -2,12 +2,16 @@
   "collectionName": "components_controllers_items",
   "info": {
     "name": "item",
-    "icon": "arrow-right"
+    "icon": "arrow-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "label": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 15
     },
     "ico": {
       "model": "file",

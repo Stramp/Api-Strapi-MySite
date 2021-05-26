@@ -15,7 +15,8 @@
     "Menu": {
       "type": "component",
       "repeatable": false,
-      "component": "controllers.menu"
+      "component": "controllers.menu",
+      "required": true
     },
     "Settings": {
       "type": "component",

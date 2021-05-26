@@ -2,28 +2,40 @@
   "collectionName": "components_controllers_settings",
   "info": {
     "name": "Settings",
-    "icon": "tools"
+    "icon": "tools",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "ColorTitle": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "colors": {
       "type": "component",
       "repeatable": true,
-      "component": "controllers.colors"
+      "component": "controllers.colors",
+      "min": 6,
+      "max": 12,
+      "required": true
     },
     "TitleLanguage": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "Languages": {
       "type": "component",
       "repeatable": true,
-      "component": "controllers.languages"
+      "component": "controllers.languages",
+      "required": true,
+      "min": 1
     },
     "TitleDarkmode": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }
