@@ -31,16 +31,19 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "Saudation": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 15,
+      "required": false
     },
     "apresentations": {
       "type": "component",
       "repeatable": false,
-      "component": "page.apresentations"
+      "component": "page.apresentations",
+      "required": true
     },
     "InitialDescription": {
       "type": "text"

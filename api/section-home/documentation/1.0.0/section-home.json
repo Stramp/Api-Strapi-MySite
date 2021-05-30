@@ -317,7 +317,9 @@
     "schemas": {
       "Section-home": {
         "required": [
-          "id"
+          "id",
+          "avatar",
+          "apresentations"
         ],
         "properties": {
           "id": {
@@ -464,36 +466,43 @@
             }
           },
           "Saudation": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 15
           },
           "apresentations": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "apresentationPrefix",
+              "apresentationSufixo"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "apresentationPrefix": {
-                "type": "string"
+                "type": "string",
+                "maxLength": 10
               },
               "apresentationSufixo": {
                 "type": "array",
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "presents"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "presents": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 15
                     }
                   }
-                }
+                },
+                "minItems": 2
               }
             }
           },
@@ -596,38 +605,48 @@
         }
       },
       "NewSection-home": {
+        "required": [
+          "apresentations"
+        ],
         "properties": {
           "Saudation": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 15
           },
           "apresentations": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "apresentationPrefix",
+              "apresentationSufixo"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "apresentationPrefix": {
-                "type": "string"
+                "type": "string",
+                "maxLength": 10
               },
               "apresentationSufixo": {
                 "type": "array",
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "presents"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "presents": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 15
                     }
                   }
-                }
+                },
+                "minItems": 2
               }
             }
           },

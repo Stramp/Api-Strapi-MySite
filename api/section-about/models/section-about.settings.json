@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_abouts",
+  "info": {
+    "name": "SectionAbout"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

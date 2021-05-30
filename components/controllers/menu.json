@@ -12,13 +12,15 @@
       "repeatable": true,
       "component": "controllers.item",
       "required": true,
-      "min": 3
+      "min": 3,
+      "max": 10
     },
     "Btns": {
       "type": "component",
       "repeatable": true,
       "component": "controllers.item",
-      "required": true
+      "required": true,
+      "max": 3
     },
     "TitleSocialMedia": {
       "type": "string",

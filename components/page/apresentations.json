@@ -2,17 +2,23 @@
   "collectionName": "components_page_apresentations",
   "info": {
     "name": "apresentations",
-    "icon": "align-center"
+    "icon": "align-center",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "apresentationPrefix": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 10,
+      "required": true,
+      "unique": true
     },
     "apresentationSufixo": {
       "type": "component",
       "repeatable": true,
-      "component": "page.apresentation-sufixo"
+      "component": "page.apresentation-sufixo",
+      "min": 2,
+      "required": true
     }
   }
 }

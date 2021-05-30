@@ -420,7 +420,8 @@
                     }
                   }
                 },
-                "minItems": 3
+                "minItems": 3,
+                "maxItems": 10
               },
               "Btns": {
                 "type": "array",
@@ -509,7 +510,8 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "maxItems": 3
               },
               "TitleSocialMedia": {
                 "type": "string"
@@ -778,7 +780,8 @@
                     }
                   }
                 },
-                "minItems": 3
+                "minItems": 3,
+                "maxItems": 10
               },
               "Btns": {
                 "type": "array",
@@ -867,7 +870,8 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "maxItems": 3
               },
               "TitleSocialMedia": {
                 "type": "string"
