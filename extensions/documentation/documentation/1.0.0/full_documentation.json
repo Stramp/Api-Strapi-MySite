@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/30/2021 9:46:28 PM"
+    "x-generation-date": "05/30/2021 10:19:45 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3939,7 +3939,11 @@
         "required": [
           "id",
           "Title",
-          "LongDescription"
+          "LongDescription",
+          "btn",
+          "Education",
+          "Experience",
+          "Skills"
         ],
         "properties": {
           "id": {
@@ -3951,6 +3955,242 @@
           "LongDescription": {
             "type": "string"
           },
+          "btn": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "label"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string",
+                  "maxLength": 15
+                },
+                "ico": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "action": {
+                  "type": "string"
+                }
+              }
+            },
+            "minItems": 1
+          },
+          "Education": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "box"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "box": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Title",
+                    "Instituition",
+                    "InitDate",
+                    "Description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Instituition": {
+                      "type": "string"
+                    },
+                    "InitDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "EndDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "Experience": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "box"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "box": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Title",
+                    "Instituition",
+                    "InitDate",
+                    "Description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Instituition": {
+                      "type": "string"
+                    },
+                    "InitDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "EndDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "Skills": {
+            "type": "object",
+            "required": [
+              "id",
+              "Skill"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Skill": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Name",
+                    "Percent",
+                    "Description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Percent": {
+                      "type": "integer"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 3
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3960,7 +4200,11 @@
       "NewSection-about": {
         "required": [
           "Title",
-          "LongDescription"
+          "LongDescription",
+          "btn",
+          "Education",
+          "Experience",
+          "Skills"
         ],
         "properties": {
           "Title": {
@@ -3968,6 +4212,242 @@
           },
           "LongDescription": {
             "type": "string"
+          },
+          "btn": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "label"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string",
+                  "maxLength": 15
+                },
+                "ico": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "action": {
+                  "type": "string"
+                }
+              }
+            },
+            "minItems": 1
+          },
+          "Education": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "box"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "box": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Title",
+                    "Instituition",
+                    "InitDate",
+                    "Description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Instituition": {
+                      "type": "string"
+                    },
+                    "InitDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "EndDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "Experience": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "box"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "box": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Title",
+                    "Instituition",
+                    "InitDate",
+                    "Description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Instituition": {
+                      "type": "string"
+                    },
+                    "InitDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "EndDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "Skills": {
+            "type": "object",
+            "required": [
+              "id",
+              "Skill"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Skill": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Name",
+                    "Percent",
+                    "Description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Percent": {
+                      "type": "integer"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 3
+              }
+            }
           },
           "published_at": {
             "type": "string",

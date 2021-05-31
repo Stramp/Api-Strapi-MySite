@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_page_boxes",
+  "info": {
+    "name": "box",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Instituition": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "InitDate": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    },
+    "EndDate": {
+      "type": "date"
+    },
+    "Description": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    }
+  }
+}

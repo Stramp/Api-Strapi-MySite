@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_skills",
+  "info": {
+    "name": "Skills",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Skill": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.teste",
+      "required": true,
+      "min": 3
+    }
+  }
+}

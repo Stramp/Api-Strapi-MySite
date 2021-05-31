@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_page_testes",
+  "info": {
+    "name": "teste",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Percent": {
+      "type": "integer",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

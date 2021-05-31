@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_page_educations",
+  "info": {
+    "name": "Education",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "box": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.box",
+      "min": 1,
+      "required": true
+    }
+  }
+}

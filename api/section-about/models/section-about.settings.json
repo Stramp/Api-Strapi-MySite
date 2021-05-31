@@ -21,6 +21,31 @@
       "type": "richtext",
       "unique": true,
       "required": true
+    },
+    "btn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "controllers.item",
+      "min": 1,
+      "required": true
+    },
+    "Education": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.education",
+      "required": true
+    },
+    "Experience": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.education",
+      "required": true
+    },
+    "Skills": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.skills",
+      "required": true
     }
   }
 }
