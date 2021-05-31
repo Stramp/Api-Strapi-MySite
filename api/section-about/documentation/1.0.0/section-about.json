@@ -318,13 +318,17 @@
       "Section-about": {
         "required": [
           "id",
-          "Title"
+          "Title",
+          "LongDescription"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "Title": {
+            "type": "string"
+          },
+          "LongDescription": {
             "type": "string"
           },
           "published_at": {
@@ -335,10 +339,14 @@
       },
       "NewSection-about": {
         "required": [
-          "Title"
+          "Title",
+          "LongDescription"
         ],
         "properties": {
           "Title": {
+            "type": "string"
+          },
+          "LongDescription": {
             "type": "string"
           },
           "published_at": {

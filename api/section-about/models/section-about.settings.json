@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "section_abouts",
   "info": {
-    "name": "SectionAbout"
+    "name": "SectionAbout",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -15,6 +16,11 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "LongDescription": {
+      "type": "richtext",
+      "unique": true,
+      "required": true
     }
   }
 }

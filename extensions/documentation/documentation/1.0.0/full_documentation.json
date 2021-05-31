@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/30/2021 8:44:42 PM"
+    "x-generation-date": "05/30/2021 9:46:28 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3938,13 +3938,17 @@
       "Section-about": {
         "required": [
           "id",
-          "Title"
+          "Title",
+          "LongDescription"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "Title": {
+            "type": "string"
+          },
+          "LongDescription": {
             "type": "string"
           },
           "published_at": {
@@ -3955,10 +3959,14 @@
       },
       "NewSection-about": {
         "required": [
-          "Title"
+          "Title",
+          "LongDescription"
         ],
         "properties": {
           "Title": {
+            "type": "string"
+          },
+          "LongDescription": {
             "type": "string"
           },
           "published_at": {
@@ -3977,7 +3985,9 @@
         "required": [
           "id",
           "avatar",
-          "apresentations"
+          "apresentations",
+          "InitialDescription",
+          "Btns"
         ],
         "properties": {
           "id": {
@@ -4165,7 +4175,8 @@
             }
           },
           "InitialDescription": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 200
           },
           "Btns": {
             "type": "array",
@@ -4254,7 +4265,8 @@
                   "type": "string"
                 }
               }
-            }
+            },
+            "minItems": 1
           },
           "published_at": {
             "type": "string",
@@ -4264,7 +4276,9 @@
       },
       "NewSection-home": {
         "required": [
-          "apresentations"
+          "apresentations",
+          "InitialDescription",
+          "Btns"
         ],
         "properties": {
           "Saudation": {
@@ -4309,7 +4323,8 @@
             }
           },
           "InitialDescription": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 200
           },
           "Btns": {
             "type": "array",
@@ -4398,7 +4413,8 @@
                   "type": "string"
                 }
               }
-            }
+            },
+            "minItems": 1
           },
           "published_at": {
             "type": "string",

@@ -46,12 +46,17 @@
       "required": true
     },
     "InitialDescription": {
-      "type": "text"
+      "type": "text",
+      "unique": true,
+      "required": true,
+      "maxLength": 200
     },
     "Btns": {
       "type": "component",
       "repeatable": true,
-      "component": "controllers.item"
+      "component": "controllers.item",
+      "required": true,
+      "min": 1
     }
   }
 }
