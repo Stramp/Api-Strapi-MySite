@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_contacts",
+  "info": {
+    "name": "SectionContact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
