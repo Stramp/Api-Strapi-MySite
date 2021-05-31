@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "section_contacts",
   "info": {
-    "name": "SectionContact"
+    "name": "SectionContact",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,11 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "contactBox": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.contact-box"
     }
   }
 }

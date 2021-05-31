@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_contact_boxes",
+  "info": {
+    "name": "contactBox",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "field": {
+      "type": "text"
+    },
+    "ico": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
