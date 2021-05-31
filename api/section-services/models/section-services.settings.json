@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_services",
+  "info": {
+    "name": "SectionServices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "BoxServices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.box-services"
+    }
+  }
+}

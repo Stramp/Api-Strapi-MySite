@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_items",
+  "info": {
+    "name": "items",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

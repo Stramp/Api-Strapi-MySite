@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_portifolios",
+  "info": {
+    "name": "SectionPortifolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.categories"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.items"
+    }
+  }
+}

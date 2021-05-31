@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_box_services",
+  "info": {
+    "name": "BoxServices",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ico": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
