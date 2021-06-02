@@ -2,7 +2,8 @@
   "collectionName": "components_page_contact_boxes",
   "info": {
     "name": "contactBox",
-    "icon": "at"
+    "icon": "at",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,14 +14,13 @@
       "type": "text"
     },
     "ico": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+      "type": "enumeration",
+      "enum": [
+        "email",
+        "phone",
+        "social",
+        "address"
+      ]
     }
   }
 }

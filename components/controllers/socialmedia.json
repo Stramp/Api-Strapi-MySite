@@ -12,15 +12,16 @@
       "required": true,
       "unique": true
     },
-    "ico": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "list": {
+      "type": "enumeration",
+      "enum": [
+        "Instagram",
+        "whatsapp",
+        "facebook",
+        "linkedin",
+        "twitter",
+        "github"
+      ]
     }
   }
 }

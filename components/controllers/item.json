@@ -13,19 +13,19 @@
       "unique": true,
       "maxLength": 15
     },
-    "ico": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "action": {
       "type": "string"
+    },
+    "ico": {
+      "type": "enumeration",
+      "enum": [
+        "home",
+        "about",
+        "services",
+        "portifolio",
+        "contact",
+        "download"
+      ]
     }
   }
 }
